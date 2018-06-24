@@ -30,19 +30,19 @@ else:
     
     
 
-if (player1_throw == 'Rock') and (player1_throw == 'Scissor'):
+if (player1_throw == 'Rock') and (player2_throw == 'Scissor'):
     player1_point += 1
     print("Player 1 Selected: ", player1_throw)
     print("Player 2 Selected: ", player2_throw)
     print("Player 1 Wins this game")
     
-elif (player1_throw == 'Scissor') and (player1_throw == 'Paper'):
+elif (player1_throw == 'Scissor') and (player2_throw == 'Paper'):
     player1_point += 1
     print("Player 1 Selected: ", player1_throw)
     print("Player 2 Selected: ", player2_throw)
     print("Player 1 Wins this game")
     
-elif (player1_throw == 'Paper') and (player1_throw == 'Rock'):
+elif (player1_throw == 'Paper') and (player2_throw == 'Rock'):
     player1_point += 1
     print("Player 1 Selected: ", player1_throw)
     print("Player 2 Selected: ", player2_throw)
@@ -54,19 +54,21 @@ elif (player2_throw == 'Paper') and (player1_throw == 'Rock'):
     print("Player 2 Selected: ", player2_throw)
     print("Player 2 Wins this game")
     
-elif (player2_throw == 'Paper') and (player2_throw == 'Rock'):
-    player1_point += 1
+elif (player2_throw == 'Paper') and (player1_throw == 'Rock'):
+    player2_point += 1
     print("Player 1 Selected: ", player1_throw)
     print("Player 2 Selected: ", player2_throw)
     print("Player 2 Wins this game")
     
-elif (player2_throw == 'Paper') and (player2_throw == 'Rock'):
+elif (player2_throw == 'Paper') and (player1_throw == 'Rock'):
     player2_point += 1
     print("Player 1 Selected: ", player1_throw)
     print("Player 2 Selected: ", player2_throw)
     print("Player 2 Wins this game")
 
-elif player2_throw == player2_throw:
+elif player1_throw == player2_throw:
+    print("Player 1 Selected: ", player1_throw)
+    print("Player 2 Selected: ", player2_throw)
     print("Game Tie No One Wins")
     
     
